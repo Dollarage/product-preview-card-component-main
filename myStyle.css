@@ -1,13 +1,13 @@
 /* styles for my "product-preview-card-component project" on front-end mentor*/
 
-/*border, margin removal, borderbox sizing*/
+/*border, margin removal, border-box sizing*/
 * {
     border: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/*body elemnt styles, center alignment of content*/
+/*body element styles, center alignment of content*/
 body {
     width: 100vw;
     height: 100vh;
@@ -17,7 +17,7 @@ body {
     background-color: hsl(30, 38%, 92%);
 }
 
-/*the centeral div element containing the other elements*/
+/*the central div element containing the other elements*/
 .main {
     background-color: hsl(0, 0%, 100%);
     width: 600px;
@@ -152,5 +152,4 @@ body {
     .header {
         font-size: 25px;
     }
-
 }
