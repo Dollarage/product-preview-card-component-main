@@ -1,0 +1,156 @@
+/* styles for my "product-preview-card-component project" on front-end mentor*/
+
+/*border, margin removal, borderbox sizing*/
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*body elemnt styles, center alignment of content*/
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+/*the centeral div element containing the other elements*/
+.main {
+    background-color: hsl(0, 0%, 100%);
+    width: 600px;
+    height: 457px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+/*styling of the image of the product*/
+.image {
+    height: 100%;
+}
+
+.card {
+    float: left;
+    height: 457px;
+    width: 300px;
+    /*background-color: blueviolet;*/
+}
+
+.text {
+    padding: 30px;
+    font-size: 14px;
+}
+
+.font-1st {
+    font-family: Montserrat, sans-serif;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 22px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.font-2nd {
+    font-family: Fraunces, serif;
+    margin-bottom: 22px;
+}
+
+.perfume {
+    margin-bottom: 22px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.header {
+    font-size: 32px;
+    line-height: 30px;
+
+}
+.price-main {
+    font-size: 30px;
+    font-weight: 800;
+    color: hsl(158, 36%, 37%);
+    /*background-color: aqua;*/
+}
+
+.price-old {
+    box-sizing: border-box;
+    margin-left: 15px;
+    height: 25;
+    width: 50;
+    /*padding-bottom: 10px;*/
+    /*background-color: aqua;*/
+    text-decoration: line-through;
+    display: inline-flex;
+    align-items: center;
+    /*padding-top: 10px;*/
+}
+
+/*span {
+    display: inline-flex;
+    align-items: center;
+}*/
+
+.button {
+    display: block;
+    width: 240px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    font-size: 15px;
+    color:hsl(30, 38%, 92%);
+    font-weight: 700;
+}
+
+.button:hover {
+    background-color: hsl(212, 21%, 14%);
+    cursor: pointer;
+}
+
+#cart {
+    padding-right: 7px;
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        float:none;
+    }
+
+@media screen and (max-width: 375px) {
+    /*body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        overflow: auto;
+    }*/
+
+    .image {
+        width: 300px;
+        height: auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    .card {
+        float: none;
+        display: block;
+        /*background-color: brown;*/
+        height: 200px;
+    }
+
+    .main {
+        background-color: hsl(0, 0%, 100%);
+        width: 300px;
+        height: 623px;
+        border-radius: 10px;
+        overflow: hidden;
+        display: block;
+    }
+
+    .header {
+        font-size: 25px;
+    }
+
+}
